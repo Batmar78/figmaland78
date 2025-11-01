@@ -6,6 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-weight: 400;
 }
 ul,
 li {
@@ -26,6 +27,7 @@ li {
   --alt-border-color: #e8e8e8;
   --transition-speed: 0.3s;
   --container-max-width: 1200px;
+  --nav-height: 78px;
 
   --spacing-xs: 0.5rem; 
   --spacing-sm: 1rem; 
