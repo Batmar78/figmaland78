@@ -1,0 +1,12 @@
+.promo-video {
+    display: none;
+
+    @media (min-width: 768px) {
+        display: block;
+
+        .promo-video__container {
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
+}

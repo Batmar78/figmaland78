@@ -42,24 +42,11 @@
       }
     }
 
+    
+
     .hero-button {
-      display: inline-block;
       margin-bottom: 220px;
-      background-color: var(--accent-color);
-      border-radius: 35px;
       padding: 16px 86px;
-      text-decoration: none;
-      transition: background-color var(--transition-speed) easy;
-
-      &:hover {
-        background-color: #1061ab;
-      }
-
-      .hero-button__text {
-        color: var(--background-color);
-        font-size: 1rem;
-        font-weight: 400;
-      }
     }
   }
 }
