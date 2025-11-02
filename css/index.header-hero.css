@@ -50,9 +50,9 @@
       padding: 16px 86px;
       text-decoration: none;
       transition: background-color var(--transition-speed) easy;
-      
+
       &:hover {
-        background-color: #1061ab; 
+        background-color: #1061ab;
       }
 
       .hero-button__text {
