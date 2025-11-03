@@ -14,10 +14,18 @@
     <h2 class="subscription-title--desc">Lightning fast prototyping</h2>
     <h3 class="subscription-title--form">Subscribe to our Newsletter</h3>
     <p class="subscription-text--form">Available exclusivery on Figmaland</p>
-    <form action="submit" method="get">
-      <div>
-        <input type="email" name="email" id="email" required />
-        <button type="submit">Subskribe</button>
+    <form class="subscription-form" action="submit" method="get">
+      <div class="subscription-form__group">
+        <input
+          class="subscription-input"
+          type="email"
+          name="email"
+          id="email"
+          required
+        />
+        <button class="subscription-button button" type="submit">
+          Subscribe
+        </button>
       </div>
     </form>
   </div>
