@@ -1,0 +1,5 @@
+.tariffs__container {
+    color: var(--background-color);
+    text-align: center;
+    background-color: var(--text-title-color);
+}

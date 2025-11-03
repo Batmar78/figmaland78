@@ -1,0 +1,104 @@
+.partners__container {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  .partners-title {
+    padding: 10px 50px;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 45px;
+    letter-spacing: 0.2px;
+    color: var(--text-title-color);
+    margin-bottom: 10px;
+
+    @media (min-width: 418px) {
+      padding: 10px 100px;
+      font-size: 2.7rem;
+      line-height: 55px;
+    }
+  }
+
+  .partners-text {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 0.2px;
+    color: var(--text-color);
+    padding: 10px 20px;
+    margin-bottom: 60px;
+
+    @media (min-width: 418px) {
+      font-size: 1.55rem;
+      line-height: 40px;
+      padding: 10px 30px;
+      margin-bottom: 80px;
+    }
+  }
+
+  .partners-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 80px;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2px;
+    }
+
+    .partners-item__desc {
+      display: none;
+
+      @media (min-width: 768px) {
+        display: block;
+      }
+    }
+
+    .partners-item {
+        padding: 25px 20px;
+        border: solid 1px var(--border-color);
+
+        @media (min-width: 418px) {
+          padding: 25px 40px;
+        }
+
+        .partners-item__title {
+            font-size: 0.8rem;
+            font-weight: 400;
+            line-height: 20px;
+            letter-spacing: 0.1px;
+            color: var(--text-color);
+            margin-bottom: 15px;
+
+            @media (min-width: 418px) {
+              font-size: 0.9rem;
+              line-height: 23px;
+            }
+        }
+
+        .partners-item__logo {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 170px;
+
+            @media (min-width: 418px) {
+              max-width: 190px;
+            }
+        }
+    }
+  }
+
+  .partners-button {
+    display: inline-block;
+    padding: 16px 60px;
+
+    .partners-button__text {
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+  }
+}

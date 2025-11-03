@@ -129,6 +129,33 @@
       font-weight: 400;
       background-color: var(--background-alt-color);
       width: 100%;
+
+      &::placeholder {
+        font-size: 0.8rem;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: 0.1px;
+        color: var(--placeholder-color);
+      }
+    }
+
+    .subscription-button {
+      padding: 17px 60px;
+      width: 100%;
+      border: none;
+
+      .subscription-button__text {
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 0.2px;
+        color: var(--background-color);
+
+        @media (min-width: 418px) {
+          font-size: 1.1rem;
+          line-height: 20px;
+        }
+      }
     }
   }
 }

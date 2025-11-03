@@ -35,13 +35,14 @@ li {
 :root {
   scroll-behavior: smooth;
   --background-color: #ffffff;
-  --background-footer-color: #252b42;
   --background-alt-color: #f4f4f4;
   --text-title-color: #252b42;
   --text-color: #374754;
   --accent-color: #2091f9;
   --border-color: #d8d8d8;
   --alt-border-color: #e8e8e8;
+  --placeholder-color: #18171D;
+
   --transition-speed: 0.3s;
   --container-max-width: 1200px;
   --nav-height: 78px;

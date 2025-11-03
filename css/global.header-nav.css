@@ -40,6 +40,7 @@
           gap: var(--spacing-sm);
           opacity: 0;
           transition: opacity var(--transition-speed);
+          pointer-events: none;
         }
 
         .header-nav__list--item {
@@ -119,13 +120,14 @@
       @media (max-width: 768px) {
         height: 100vh;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        padding-top: 50px;
+        padding-top: 50px; 
       }
     }
 
     .header-nav.is-open > .header-nav__list {
       @media (max-width: 768px) {
         opacity: 1;
+        pointer-events: auto;
       }
     }
 
