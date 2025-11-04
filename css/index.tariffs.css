@@ -18,7 +18,6 @@
     font-weight: 400;
     line-height: 40px;
     letter-spacing: 0.2px;
-    color: var(--background-color);
 
     @media (min-width: 418px) {
       font-size: 2.7rem;
@@ -33,7 +32,6 @@
     font-weight: 400;
     line-height: 30px;
     letter-spacing: 0.2px;
-    color: var(--background-color);
 
     @media (min-width: 418px) {
       padding: 10px 60px;
@@ -66,7 +64,6 @@
       background-color: var(--background-color);
       border-radius: 10px;
       padding: 40px 20px;
-      color: var(--text-title-color);
       text-align: center;
       border: solid 1px var(--other-border-color);
       box-shadow: 0 13px 19px var(--border-shadow-color);
@@ -87,12 +84,19 @@
         }
       }
 
+      .tariffs-item__title-basic {
+        color: var(--text-title-color);
+      }
+
+      .tariffs-item__title--accent {
+        color: var(--background-color);
+      }
+
       .tariffs-item__text {
         font-size: 0.7rem;
         font-weight: 400;
         line-height: 19px;
         letter-spacing: 0.1px;
-        color: var(--text-color);
         padding: 0px 70px;
         margin-bottom: 20px;
 
@@ -102,6 +106,14 @@
           padding: 0px 120px;
           margin-bottom: 30px;
         }
+      }
+
+      .tariffs-item__text-basic {
+        color: var(--text-color);
+      }
+
+      .tariffs-item__text--accent {
+        color: var(--background-color);
       }
 
       .tariffs-item__price {
@@ -133,7 +145,14 @@
             font-weight: 400;
             line-height: 23px;
             letter-spacing: 0.1px;
+          }
+
+          .tariffs-item__price--period-basic {
             color: var(--text-color);
+          }
+
+          .tariffs-item__price--period-accent {
+            color: var(--background-color);
           }
         }
       }
@@ -148,7 +167,14 @@
           font-weight: 400;
           line-height: 28px;
           letter-spacing: 0.2px;
+        }
+
+        .tariffs-item__price--list-item-basic {
           color: var(--text-title-color);
+        }
+
+        .tariffs-item__price--list-item-accent {
+          color: var(--background-color);
         }
       }
 
@@ -165,41 +191,38 @@
           font-weight: 400;
           line-height: 17px;
           letter-spacing: 0.2px;
+
+          @media (min-width: 418px) {
+            font-size: 1.1rem;
+            line-height: 20px;
+          }
+        }
+
+        .tariffs-item__button--text-basic {
           color: var(--background-color);
         }
 
-        @media (min-width: 418px) {
-          font-size: 1.1rem;
-          line-height: 20px;
+        .tariffs-item__button--text-accent {
+          color: var(--accent-color);
         }
       }
+
+      .tariffs-item__button-accent {
+        background-color: var(--background-color);
+
+        &:hover {
+          background-color: var(--border-color);
+        }
+      }
+    }
+
+    .tariffs-item-basic {
+      color: var(--text-title-color);
     }
 
     .tariffs-item--accent {
       background-color: var(--accent-color);
       color: var(--background-color);
-      border: none;
-      box-shadow: 0 13px 19px var(--accent-shadow-color);
-
-      .tariffs-item__text {
-        color: var(--background-color);
-      }
-
-      .tariffs-item__price--period-accent {
-        color: var(--background-color);
-      }
-
-      .tariffs-item__button {
-        background-color: var(--background-color);
-
-        &:hover {
-          background-color: #e0e0e0;
-        }
-
-        .tariffs-item__button--text {
-          color: var(--text-title-color);
-        }
-      }
+    }
   }
-}
 }

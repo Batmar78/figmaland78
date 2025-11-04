@@ -1,30 +1,98 @@
-<section>
-        <h2>Contact Us</h2>
-        <p>
-          Most calendars are designed for teams. Slate is designed for
-          freelancers
-        </p>
-        <div>
-          <form action="submit" method="get">
-            <div>
-              <input type="email" name="email" id="email" required />
-              <input type="email" name="email" id="email" required />
-              <input type="email" name="email" id="email" required />
-              <button type="submit">Send</button>
-            </div>
-          </form>
-          <div>
-            <ul>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ul>
-            <map name="#"></map>
-            <ul>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ul>
-          </div>
-        </div>
-      </section>
+<section class="contact-us">
+  <div class="contact-us-container container">
+    <h2 class="contact-us-title">Contact Us</h2>
+    <p class="contact-us-subtitle">Most calendars are designed for teams.</p>
+    <p class="contact-us-subtitle--desc">Slate is designed for freelancers</p>
+    <div>
+      <ul class="contact-us-social-networks__list social-networks list">
+        <li class="contact-us-social-networks__item social-networks__item">
+          <a href="#">
+            <img
+              src="svg/twitter_icon.svg"
+              alt="Twitter-icon"
+              aria-label="Twitter"
+            />
+          </a>
+        </li>
+        <li class="contact-us-social-networks__item social-networks__item">
+          <a href="#">
+            <img
+              src="svg/fb_icon.svg"
+              alt="Facebook-icon"
+              aria-label="Facebook"
+            />
+          </a>
+        </li>
+        <li class="contact-us-social-networks__item social-networks__item">
+          <a href="#">
+            <img
+              src="svg/in_icon.svg"
+              alt="LinkedIn-icon"
+              aria-label="LinkedIn"
+            />
+          </a>
+        </li>
+      </ul>
+      <ul class="contact-us-contacts__list list">
+        <li class="contact-us-contacts__item">
+          <address class="contact-us-contacts__address">
+            <a href="https://maps.app.goo.gl/CwsJh3WY1Qo1hH1w8">
+              <img src="img/map.png" alt="Map location" />
+              <p class="contact-us-contacts__address--text">
+                6386 Spring St undefined Anchorage, Georgia 12473 United States
+              </p>
+            </a>
+          </address>
+        </li>
+        <li class="contact-us-contacts__item">
+          <a href="tel:+18435550130">
+            <img src="img/phone.png" alt="Phone icon" />
+            <p class="contact-us-contacts__phone">(843) 555-0130</p>
+          </a>
+        </li>
+        <li class="contact-us-contacts__item">
+          <a href="mailto:willie.jennings@example.com">
+            <img src="img/mail.png" alt="Email icon" />
+            <p class="contact-us-contacts__email">willie.jennings@example.com</p>
+          </a>
+        </li>
+      </ul>
+      <div class="contact-us-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3380.691086040766!2d-82.911214!3d32.077602999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzLCsDA0JzM5LjQiTiA4MsKwNTQnNDAuNCJX!5e0!3m2!1suk!2sua!4v1762293443104!5m2!1suk!2sua"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+      <form class="contact-form" action="submit" method="get">
+        <h2 class="contact-form__title">Contact Us</h2>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Your Name"
+          required
+        />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Your Email"
+          required
+        />
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Your Message"
+          rows="4"
+          required
+        ></textarea>
+        <button type="submit" class="contact-form__submit">Send</button>
+      </form>
+    </div>
+  </div>
+</section>
