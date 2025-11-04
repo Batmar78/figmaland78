@@ -1,5 +1,205 @@
+.tariffs {
+  padding: 60px 0px;
+  background-color: var(--text-title-color);
+
+  @media (min-width: 418px) {
+    padding: 100px 0px;
+  }
+}
+
 .tariffs__container {
+  color: var(--background-color);
+  text-align: center;
+
+  .tariffs-title {
+    padding: 10px 40px;
+    margin-bottom: 7px;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0.2px;
     color: var(--background-color);
-    text-align: center;
-    background-color: var(--text-title-color);
+
+    @media (min-width: 418px) {
+      font-size: 2.7rem;
+      line-height: 55px;
+    }
+  }
+
+  .tariffs-text__mob {
+    padding: 10px 35px;
+    margin-bottom: 60px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+    color: var(--background-color);
+
+    @media (min-width: 418px) {
+      padding: 10px 60px;
+      margin-bottom: 80px;
+      font-size: 1.6rem;
+      line-height: 40px;
+    }
+  }
+
+  .tariffs-text__desc {
+    display: none;
+
+    @media (min-width: 768px) {
+      display: block;
+    }
+  }
+
+  .tariffs-list {
+    padding: 18px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    @media (min-width: 418px) {
+      padding: 18px 25px;
+      gap: 50px;
+    }
+
+    .tariffs-item {
+      background-color: var(--background-color);
+      border-radius: 10px;
+      padding: 40px 20px;
+      color: var(--text-title-color);
+      text-align: center;
+      border: solid 1px var(--other-border-color);
+      box-shadow: 0 13px 19px var(--border-shadow-color);
+
+      @media (min-width: 418px) {
+        padding: 40px 40px;
+      }
+
+      .tariffs-item__title {
+        font-size: 1.2rem;
+        font-weight: 900;
+        line-height: 28px;
+        letter-spacing: 0.1px;
+        margin-bottom: 5px;
+
+        @media (min-width: 418px) {
+          font-size: 1.5rem;
+        }
+      }
+
+      .tariffs-item__text {
+        font-size: 0.7rem;
+        font-weight: 400;
+        line-height: 19px;
+        letter-spacing: 0.1px;
+        color: var(--text-color);
+        padding: 0px 70px;
+        margin-bottom: 20px;
+
+        @media (min-width: 418px) {
+          font-size: 0.9rem;
+          line-height: 24px;
+          padding: 0px 120px;
+          margin-bottom: 30px;
+        }
+      }
+
+      .tariffs-item__price {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 30px;
+
+        .tariffs-item__price--cost {
+          font-size: 4.2rem;
+          font-weight: 900;
+          line-height: 84px;
+          letter-spacing: 0.2px;
+        }
+
+        .tariffs-item__price--group {
+          text-align: left;
+
+          .tariffs-item__price--currency {
+            font-size: 1.1rem;
+            font-weight: 900;
+            line-height: 28px;
+            letter-spacing: 0.1px;
+          }
+
+          .tariffs-item__price--period {
+            font-size: 0.8rem;
+            font-weight: 400;
+            line-height: 23px;
+            letter-spacing: 0.1px;
+            color: var(--text-color);
+          }
+        }
+      }
+
+      .tariffs-item__price--list {
+        padding: 0px 60px;
+        margin-bottom: 30px;
+
+        .tariffs-item__price--list-item {
+          padding: 10px;
+          font-size: 0.8rem;
+          font-weight: 400;
+          line-height: 28px;
+          letter-spacing: 0.2px;
+          color: var(--text-title-color);
+        }
+      }
+
+      .tariffs-item__button {
+        padding: 10px 40px;
+        border: none;
+
+        @media (min-width: 418px) {
+          padding: 18px 75px;
+        }
+
+        .tariffs-item__button--text {
+          font-size: 0.9rem;
+          font-weight: 400;
+          line-height: 17px;
+          letter-spacing: 0.2px;
+          color: var(--background-color);
+        }
+
+        @media (min-width: 418px) {
+          font-size: 1.1rem;
+          line-height: 20px;
+        }
+      }
+    }
+
+    .tariffs-item--accent {
+      background-color: var(--accent-color);
+      color: var(--background-color);
+      border: none;
+      box-shadow: 0 13px 19px var(--accent-shadow-color);
+
+      .tariffs-item__text {
+        color: var(--background-color);
+      }
+
+      .tariffs-item__price--period-accent {
+        color: var(--background-color);
+      }
+
+      .tariffs-item__button {
+        background-color: var(--background-color);
+
+        &:hover {
+          background-color: #e0e0e0;
+        }
+
+        .tariffs-item__button--text {
+          color: var(--text-title-color);
+        }
+      }
+  }
+}
 }
