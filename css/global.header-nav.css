@@ -120,7 +120,7 @@
       @media (max-width: 768px) {
         height: 100vh;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        padding-top: 50px; 
+        padding-top: 50px;
       }
     }
 
@@ -147,9 +147,21 @@
 
     .header-social-networks__list {
       display: none;
+      /* fill: var(--background-color); */
+      color: var(--background-color);
 
-      @media (min-width:1024px) {
+      @media (min-width: 1024px) {
         display: flex;
+      }
+
+      .header-social-networks__icon {
+        width: 32px;
+        height: 32px;
+        color: var(--background-color);
+      }
+
+      .social-networks__link:hover .social-networks__icon {
+        color: var(--border-color);
       }
     }
   }
